@@ -3,7 +3,7 @@
   "name": "kanbas-node-server-app",
   "version": "1.0.0",
   "description": "Node.js HTTP Web server for the Kanbas application",
-  "main": "start.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node start.js"
