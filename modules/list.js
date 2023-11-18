@@ -2,7 +2,10 @@ import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import React, { useEffect, useState } from "react";
 import {
-  addModule, deleteModule, updateModule, setModule,
+  addModule, 
+  deleteModule, 
+  updateModule, 
+  setModule,
   setModules,
 } from "./modulesReducer";
 import * as client from "./client";
