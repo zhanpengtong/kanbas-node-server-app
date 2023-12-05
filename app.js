@@ -6,7 +6,7 @@ import cors from "cors";
 import ModuleRoutes from "./modules/routes.js";
 import UserRoutes from "./users/routes.js";
 import mongoose from "mongoose";
-mongoose.connect("mongodb://127.0.0.1:27017/kanbas-cs5610-fa23");
+// mongoose.connect("mongodb://127.0.0.1:27017/kanbas-cs5610-fa23");
 import "dotenv/config.js";
 import session from "express-session";
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas-cs5610-fa23';
