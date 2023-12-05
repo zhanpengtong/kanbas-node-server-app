@@ -47,6 +47,7 @@ function UserRoutes(app) {
     const id = req.params.id;
     const newUser = req.body;
     const status = await dao.updateUser(id, newUser);
+    req.session['currentUser'] = await dao.findUserById(id);
     res.json(status);
   };
   const updateFirstName = async (req, res) => {
@@ -84,6 +85,7 @@ function UserRoutes(app) {
     if (user) {
       res.status(400).json(
         { message: "Username already taken" });
+        return;
     }
     const currentUser = await dao.createUser(req.body);
     req.session['currentUser'] = currentUser;
